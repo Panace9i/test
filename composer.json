@@ -1,0 +1,25 @@
+{
+  "name": "panace9i/rabbitmq",
+  "description": "Queue manager. Based on AMQ protocol.",
+  "authors": [
+    {
+      "name": "Baidin Sergei",
+      "role": "Developer"
+    }
+  ],
+  "version": "1.0.0",
+  "require": {
+    "php": ">=5.6.0",
+    "php-amqplib/php-amqplib": "2.6.3"
+  },
+  "autoload": {
+    "psr-0": {
+      "Panace9i\\Queue\\RabbitMQ\\Consumer": ".",
+      "Panace9i\\Queue\\RabbitMQ\\Consumer\\Adapter": ".",
+      "Panace9i\\Queue\\RabbitMQ\\Handler": ".",
+      "Panace9i\\Queue\\RabbitMQ\\Config": ".",
+      "Panace9i\\Queue\\RabbitMQ\\Producer": ".",
+      "Panace9i\\Queue\\RabbitMQ\\Producer\\Adapter": "."
+    }
+  }
+}
