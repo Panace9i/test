@@ -6,6 +6,8 @@ php:
 
 before_script:
   - echo "test"
+  - ll
+  - pwd
 
 script:
   - composer test
