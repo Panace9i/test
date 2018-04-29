@@ -10,4 +10,5 @@ before_script:
   - composer install
 
 script:
-  - php example/async_consumer.php
+  - php example/sync_consumer.php
+  - php example/sync_producer.php
