@@ -6,7 +6,7 @@ php:
 
 before_script:
   - echo "test"
-  - ll
+  - ls -l
   - pwd
 
 script:
