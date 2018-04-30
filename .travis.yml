@@ -8,6 +8,7 @@ services:
 
 before_script:
   - composer install
+  - curl -vvv localhost
 
 script:
   - php example/sync_consumer.php
