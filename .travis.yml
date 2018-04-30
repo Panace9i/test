@@ -6,6 +6,10 @@ php:
 before_script:
   - sudo apt-get update
   - sudo apt-get install nginx
+  - ls -l
+  - cd /usr/share/nginx/www
+  - pwd
+  - ls -l
 
 script:
   - curl -vvv localhost
