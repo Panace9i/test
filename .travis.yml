@@ -6,7 +6,7 @@ php:
 before_script:
   - sudo apt-get update
   - sudo apt-get install nginx
-  - cp example /usr/share/nginx/html
+  - sudo cp -R /home/travis/build/Panace9i/test/example /usr/share/nginx/html
   - cd /usr/share/nginx/html
   - ls -l
 
