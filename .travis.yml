@@ -8,7 +8,8 @@ before_script:
   - sudo apt-get install nginx
   - ls -l
   - pwd
-  - cat /etc/nginx/sites-enabled/default
+  - cd /usr/share/nginx/html
+  - ls -l
 
 script:
   - curl -vvv localhost
