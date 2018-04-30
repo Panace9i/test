@@ -6,9 +6,7 @@ php:
 before_script:
   - sudo apt-get update
   - sudo apt-get install nginx
-  - sudo cp -R /home/travis/build/Panace9i/test/example /usr/share/nginx/html
-  - cd /usr/share/nginx/html
-  - ls -l
+  - sudo cp -R /home/travis/build/Panace9i/test/examples /usr/share/nginx/html
 
 script:
-  - curl -vvv localhost
+  - curl -vvv localhost/examples/inline.php
