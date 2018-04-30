@@ -6,8 +6,7 @@ php:
 before_script:
   - sudo apt-get update
   - sudo apt-get install nginx
-  - ls -l
-  - pwd
+  - cp example /usr/share/nginx/html
   - cd /usr/share/nginx/html
   - ls -l
 
