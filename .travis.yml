@@ -7,6 +7,7 @@ before_script:
   - sudo apt-get update
   - sudo apt-get install nginx php5-cgi php5-fpm
   - sudo cp -R /home/travis/build/Panace9i/test/examples /usr/share/nginx/html
+  - cat /etc/nginx/sites-enabled/default
 
 script:
   - curl -vvv localhost/examples/inline.php
