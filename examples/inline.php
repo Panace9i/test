@@ -1,4 +1,5 @@
 <?php
+echo __DIR__ . '/config.php', PHP_EOL;
 require_once __DIR__ . '/config.php';
 
 use Panace9i\File\Download\Download;

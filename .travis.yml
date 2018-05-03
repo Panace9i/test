@@ -9,8 +9,6 @@ before_script:
   - sudo cp -R /home/travis/build/Panace9i/test/examples /usr/share/nginx/html
   - sudo mv travis-build/nginx.default.config /etc/nginx/sites-enabled/default
   - sudo service nginx restart
-  - sudo mv travis-build/php.ini /etc/php5/fpm/php.ini
-  - sudo service php5-fpm restart
 
 script:
   - curl -vvv localhost/examples/inline.php
